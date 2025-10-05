@@ -1,0 +1,132 @@
+{
+  "groups": [
+    {
+      "name": "av.api",
+      "type": "com.example.child_agent_back.config.ApiProperties",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties"
+    },
+    {
+      "name": "av.api.chat",
+      "type": "com.example.child_agent_back.config.ApiProperties$ChatApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties",
+      "sourceMethod": "getChat()"
+    },
+    {
+      "name": "av.api.image",
+      "type": "com.example.child_agent_back.config.ApiProperties$ImageApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties",
+      "sourceMethod": "getImage()"
+    },
+    {
+      "name": "av.api.image.analyze",
+      "type": "com.example.child_agent_back.config.ApiProperties$ImageApi$AnalyzeApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi",
+      "sourceMethod": "getAnalyze()"
+    },
+    {
+      "name": "av.api.image.tos",
+      "type": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi",
+      "sourceMethod": "getTos()"
+    },
+    {
+      "name": "av.api.voice",
+      "type": "com.example.child_agent_back.config.ApiProperties$VoiceApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties",
+      "sourceMethod": "getVoice()"
+    },
+    {
+      "name": "av.api.voice.recognize",
+      "type": "com.example.child_agent_back.config.ApiProperties$VoiceApi$RecognizeApi",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$VoiceApi",
+      "sourceMethod": "getRecognize()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "av.api.chat.api-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ChatApi"
+    },
+    {
+      "name": "av.api.chat.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ChatApi"
+    },
+    {
+      "name": "av.api.chat.model",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ChatApi"
+    },
+    {
+      "name": "av.api.image.analyze.api-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$AnalyzeApi"
+    },
+    {
+      "name": "av.api.image.analyze.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$AnalyzeApi"
+    },
+    {
+      "name": "av.api.image.analyze.model",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$AnalyzeApi"
+    },
+    {
+      "name": "av.api.image.tos.access-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi"
+    },
+    {
+      "name": "av.api.image.tos.bucket-name",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi"
+    },
+    {
+      "name": "av.api.image.tos.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi"
+    },
+    {
+      "name": "av.api.image.tos.expire-time",
+      "type": "java.lang.Long",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi",
+      "defaultValue": 3600
+    },
+    {
+      "name": "av.api.image.tos.region",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi"
+    },
+    {
+      "name": "av.api.image.tos.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$ImageApi$TosApi"
+    },
+    {
+      "name": "av.api.voice.recognize.api-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$VoiceApi$RecognizeApi"
+    },
+    {
+      "name": "av.api.voice.recognize.app-id",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$VoiceApi$RecognizeApi"
+    },
+    {
+      "name": "av.api.voice.recognize.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$VoiceApi$RecognizeApi"
+    },
+    {
+      "name": "av.api.voice.recognize.secret-key",
+      "type": "java.lang.String",
+      "sourceType": "com.example.child_agent_back.config.ApiProperties$VoiceApi$RecognizeApi"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}
